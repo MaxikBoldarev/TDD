@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 import ru.netology.PhoneBook;
+
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -38,11 +39,8 @@ public class PhoneBookTest {
     public void printAllName() {
         phoneBook.add("Oleg", "8950111");
         phoneBook.add("Ira", "8951240");
-        String[] expected = {"Oleg", "Ira"};
-
+        String[] expected = {"Ira", "Oleg"};
         List<String> actual = phoneBook.printAllNames();
-        assertThat(actual,contains(expected));
+        assertThat(actual, contains(expected));
     }
-
-
 }

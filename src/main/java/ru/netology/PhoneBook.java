@@ -30,14 +30,15 @@ public class PhoneBook {
     }
 
     public String findByName(String name) {
-        if(phoneBook.containsKey(name)){
+        if (phoneBook.containsKey(name)) {
             return phoneBook.get(name);
         }
         return null;
     }
 
-    public List<String> printAllNames(){
+    public List<String> printAllNames() {
         List<String> list = new ArrayList<>();
+        list.addAll(phoneBook.keySet());
         return list;
     }
 }
