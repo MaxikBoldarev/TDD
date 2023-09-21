@@ -1,6 +1,8 @@
 package ru.netology;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -32,6 +34,11 @@ public class PhoneBook {
             return phoneBook.get(name);
         }
         return null;
+    }
+
+    public List<String> printAllNames(){
+        List<String> list = new ArrayList<>();
+        return list;
     }
 }
 
