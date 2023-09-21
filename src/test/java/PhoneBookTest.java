@@ -16,5 +16,12 @@ public class PhoneBookTest {
         assertEquals(expected,actual);
     }
 
+    @Test
+    public void findByName(){
+        String expected = "8950111";
+        String actual = phoneBook.findByName("Oleg");
+        assertEquals(expected,actual);
+    }
+
 
 }
